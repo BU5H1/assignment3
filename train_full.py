@@ -1,3 +1,12 @@
+# ============================================================
+# This script fine-tunes all parameters of a pretrained DistilBERT model
+# for sentiment classification (negative / neutral / positive) using the
+# TweetEval sentiment dataset.
+# 
+# Usage:
+#     python train_full.py --model_name distilbert-base-uncased --out results/distilbert_full
+# ============================================================
+
 # imports and setup
 import argparse, os, json, torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, get_linear_schedule_with_warmup

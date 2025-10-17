@@ -1,3 +1,12 @@
+# ============================================================
+# This script trains only a small classification head on top of a frozen
+# pretrained DistilBERT encoder. The goal is to compare performance and
+# efficiency against full fine-tuning.
+#
+# Usage:
+#     python train_head.py --model_name distilbert-base-uncased --out results/distilbert_head
+# ============================================================
+
 # imports and setup
 import argparse, os, json, torch
 from transformers import AutoTokenizer, AutoModel
