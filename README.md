@@ -19,3 +19,10 @@ python evaluate.py --ckpt results\distilbert_head --split test
 
 python scripts\plot_compare.py --roots results\distilbert_full results\distilbert_head --out results\compare.png
 ```
+## Reproduce experiments
+```bash
+# Full training (GPU if available)
+bash run.sh
+
+# Lightweight CPU-friendly run
+bash run.sh --small
